@@ -1,6 +1,6 @@
 public class Encrypter {
     public static void main(String[] args) {
-        
+
     }
     public static String encrypt(String initial) {
         int integer = Integer.parseInt(initial); // converts the string to an int
