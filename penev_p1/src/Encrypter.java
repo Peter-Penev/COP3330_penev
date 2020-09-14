@@ -1,9 +1,6 @@
 public class Encrypter {
     public static void main(String[] args) {
-
-        String good = encrypt("1234");
-        System.out.println(good);
-
+        
     }
     public static String encrypt(String initial) {
         int integer = Integer.parseInt(initial); // converts the string to an int
