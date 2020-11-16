@@ -1,2 +1,2 @@
-public class TaskList {
+class TaskList {
 }
