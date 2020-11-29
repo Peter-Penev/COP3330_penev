@@ -326,11 +326,11 @@ class TaskListTest {
 
     @Test
     public void newTaskListIsEmpty(){
+        TaskItem list[] = new TaskItem[10000];
+        int completed[] = new int[10000];
         int size = 0;
-        if(size == 0){
-            System.out.println("List is Empty");
-        }
-        assertEquals("List is Empty", "List is Empty");
+
+        assertEquals(0, size);
     }
 
     @Test
