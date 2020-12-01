@@ -46,7 +46,7 @@ class TaskListTest {
         int size = 0;
         TaskList.addTask(list, "one", "two", "0000-00-00", size);
         size++;
-        int edit = 10;
+        int edit = 10;//user input
         if(edit < 0 || edit >= size || completed[edit] == 1){
             if(edit < 0 || edit >= size){
                 System.out.println("Task does not exist");
