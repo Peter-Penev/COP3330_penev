@@ -4,6 +4,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class ContactListTest {
+    //the names of the method explains what everything in the test's objective is
     @Test
     public void addingItemsIncreasesSize(){
         ContactItem[] list = new ContactItem[10000];

@@ -4,6 +4,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class TaskListTest {
+    //the names of the method explains what everything in the test's objective is
     @Test
     public void addingItemsIncreasesSize(){
         int size = 0;

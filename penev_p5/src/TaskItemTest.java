@@ -3,6 +3,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class TaskItemTest {
+    //the names of the method explains what everything in the test's objective is
     @Test
     public void constructorFailsWithInvalidDueDate(){
         String title = "Title";

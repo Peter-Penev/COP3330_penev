@@ -3,6 +3,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class ContactItemTest {
+    //the names of the method explains what everything in the test's objective is
     @Test
     public void creationFailsWithAllBlankValues(){
         ContactItem[] list = new ContactItem[10000];

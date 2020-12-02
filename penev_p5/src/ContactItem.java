@@ -5,14 +5,14 @@ public class ContactItem extends ContactList{
     String Phone;
     String Email;
 
-    ContactItem(String First, String Last, String Phone, String Email){
+    ContactItem(String First, String Last, String Phone, String Email){ //constructor for a contactItem
         this.First = First;
         this.Last = Last;
         this.Phone = Phone;
         this.Email = Email;
     }
 
-    public static void CCprint(ContactItem[] a, int size){
+    public static void CCprint(ContactItem[] a, int size){ //prints out the current contacts
         System.out.println("Current Contacts");
         System.out.println("-------------");
         System.out.println();
@@ -34,7 +34,7 @@ public class ContactItem extends ContactList{
         return b;
     }
 
-    public static int Ccheck(String a, String b, String c, String d){
+    public static int Ccheck(String a, String b, String c, String d){ //checks if the phone and email is valid
         if(c.length() > 0){
             if(phoneValid(c) == 0){
                 System.out.println("WARNING: invalid phone format");
@@ -50,7 +50,7 @@ public class ContactItem extends ContactList{
         return 1;
     }
 
-    public static int phoneValid(String date){
+    public static int phoneValid(String date){ //checks if the phone is valid
         if(date.length() == 12){
             if(date.charAt(3) == '-' && date.charAt(7) == '-'){
                 for(int i = 0; i < 12; i++){
@@ -73,7 +73,7 @@ public class ContactItem extends ContactList{
         return 1;
     }
 
-    public static int emailValid(String email){
+    public static int emailValid(String email){ //checks if the email is valid
         int size = email.length();
         int one = -1; // @
         int two = -1; // .
@@ -114,7 +114,7 @@ public class ContactItem extends ContactList{
         return 1;
     }
 
-    public static int CaddTask(ContactItem[] a, String first, String last, String phone, String email, int size){
+    public static int CaddTask(ContactItem[] a, String first, String last, String phone, String email, int size){ //checks if the contact is valid
         if(first.equals("") && last.equals("") && phone.equals("") && email.equals("")){
             System.out.println("WARNING: contact must have at least one item");
             return -1;

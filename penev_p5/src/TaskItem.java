@@ -4,13 +4,13 @@ public class TaskItem extends TaskList{
     String Description;
     String Date;
 
-    TaskItem(String title, String description, String date){
+    TaskItem(String title, String description, String date){ //constructs a task
         Title = title;
         Description = description;
         Date = date;
     }
 
-    public static void print(TaskItem[] a, int size, int[] completed){
+    public static void print(TaskItem[] a, int size, int[] completed){ //prints out all of the tasks
         System.out.println("Current Tasks");
         System.out.println("-------------");
         System.out.println();
@@ -25,7 +25,7 @@ public class TaskItem extends TaskList{
         System.out.println();
     }
 
-    public static void Uprint(TaskItem[] a, int size, int[] completed){
+    public static void Uprint(TaskItem[] a, int size, int[] completed){//prints all tasks that are not completed
         System.out.println("Uncompleted Tasks");
         System.out.println("-------------");
         System.out.println();
@@ -39,7 +39,7 @@ public class TaskItem extends TaskList{
         System.out.println();
     }
 
-    public static void Cprint(TaskItem[] a, int size, int[] completed){
+    public static void Cprint(TaskItem[] a, int size, int[] completed){ //prints all completed tasks
         System.out.println("Completed Tasks");
         System.out.println("-------------");
         System.out.println();
@@ -53,7 +53,7 @@ public class TaskItem extends TaskList{
         System.out.println();
     }
 
-    public static int createTask(String title, String description, String date){
+    public static int createTask(String title, String description, String date){ //checks if a task is valid
         if(title.equals("")){
             System.out.println("WARNING: title must be at least 1 character long; task not created");
             System.out.println();
@@ -71,7 +71,7 @@ public class TaskItem extends TaskList{
         }
     }
 
-    public static int dateValid(String date){
+    public static int dateValid(String date){ //checks if the date is valid
         if(date.length() == 10){
             if(date.charAt(4) == '-' && date.charAt(7) == '-'){
                 for(int i = 0; i < 10; i++){
